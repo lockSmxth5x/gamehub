@@ -163,8 +163,8 @@ body {
 
 @media screen and (max-height: 1365px) {
   #moreInfo_part1 img, #moreInfo_part2 img{
-    width: 440px;
-    height: 220px;
+    width: 450px;
+    height: 230px;
     top: 8%;
   }
 }
