@@ -91,6 +91,7 @@ body {
   width: 100%;
   height: 41.3vh;
   overflow: hidden;
+  text-align: justify;
 }
 
 .moreInfo {
@@ -108,22 +109,23 @@ body {
   right: 12%;
 }
 
-#moreInfo_part1 h1 {
+#moreInfo_part1 h1, #moreInfo_part3 h1 {
   float: right;
   position: absolute;
   top: 33%;
   right: 12%;
 }
 
-#moreInfo_part1 p {
+#moreInfo_part1 p, #moreInfo_part3 p {
   float: right;
   position: absolute;
   top: 50%;
   right: 10%;
+  text-align: right;
 }
 #moreInfo_part1 img {
   width: 470px;
-  height: 250px;
+  height: 35vh;
   float: left;
   position: relative;
   left: 4em;
@@ -153,18 +155,24 @@ body {
 }
 #moreInfo_part2 img {
   width: 470px;
-  height: 250px;
+  height: 35vh;
   float: right;
   position: relative;
   right: 4em;
   top: 11%;
   cursor:pointer;
 }
-
-@media screen and (max-height: 1365px) {
-  #moreInfo_part1 img, #moreInfo_part2 img{
-    width: 440px;
-    height: 220px;
-    top: 8%;
-  }
+#moreInfo_part3 img{
+  width: 470px;
+  height: 35vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 11%;
+  left: 4em;
+}
+#moreInfo_part3 h3 {
+  position: absolute;
+  top: 25%;
+  right: 9.5em;
 }
