@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 @keyframes gradient {
@@ -65,7 +64,7 @@ body {
 }
 
 #nav nav a:hover {
-  color: #23f23f;
+  color: #898989;
 }
 
 #hero {
@@ -85,12 +84,12 @@ body {
   top: 2.3em;
 }
 
-.deez {
+.hero-content {
   position: relative;
   top: 25%;
 }
 
-#moreInfo_part1 {
+.more-info-section-1 {
   background-color: rgb(4, 160, 212);
   position: absolute;
   top: 58.7%;
@@ -99,37 +98,36 @@ body {
   overflow: hidden;
 }
 
-.moreInfo {
+.more-info {
   position: absolute;
   height: 41.3vh;
   overflow: hidden;
   width: 100%;
-  background-color: rgb(200, 66, 245);
   text-align: justify;
 }
 
-#moreInfo_part1 h3 {
+.more-info-section-1 h3 {
   float: right;
   position: relative;
   top: 25%;
   right: 12%;
 }
 
-#moreInfo_part1 h1 {
+.more-info-section-1 h1 {
   float: right;
   position: absolute;
   top: 33%;
   right: 12%;
 }
 
-#moreInfo_part1 p {
+.more-info-section-1 p {
   float: right;
   position: absolute;
   top: 50%;
   right: 10%;
 }
 
-#moreInfo_part1 img {
+.more-info-section-1 img {
   width: 470px;
   height: 250px;
   float: left;
@@ -139,32 +137,33 @@ body {
   cursor: pointer;
 }
 
-#moreInfo_part2 {
+.more-info-section-2 {
   top: 100%;
+  background-color: rgb(200, 66, 245);
 }
 
-#moreInfo_part2 h3 {
+.more-info-section-2 h3 {
   float: left;
   position: relative;
   top: 25%;
   left: 12%;
 }
 
-#moreInfo_part2 h1 {
+.more-info-section-2 h1 {
   float: left;
   position: absolute;
   top: 33%;
   left: 12%;
 }
 
-#moreInfo_part2 p {
+.more-info-section-2 p {
   float: left;
   position: absolute;
   top: 50%;
   left: 12%;
 }
 
-#moreInfo_part2 img {
+.more-info-section-2 img {
   width: 470px;
   height: 250px;
   float: right;
@@ -176,8 +175,8 @@ body {
 
 @media screen and (max-height: 1365px) {
 
-  #moreInfo_part1 img,
-  #moreInfo_part2 img {
+  .more-info-section-1 img,
+  .more-info-section-2 img {
     width: 450px;
     height: 230px;
     top: 8%;
