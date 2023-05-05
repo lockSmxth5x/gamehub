@@ -70,6 +70,8 @@ body {
 
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(354deg, rgba(255, 65, 194, 1) 0%, rgba(255, 204, 46, 1) 100%);
+  -webkit-backdrop-filter: blur(100px);
+  -moz-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
   background-size: 380% 380%;
   text-align: center;
@@ -77,9 +79,13 @@ body {
   animation: gradient 8s ease infinite;
   text-align: center;
   overflow: hidden;
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  top: 2.3em;
 }
 
-#hero #deez {
+.deez {
   position: relative;
   top: 25%;
 }
@@ -98,6 +104,7 @@ body {
   height: 41.3vh;
   overflow: hidden;
   width: 100%;
+  background-color: rgb(200, 66, 245);
   text-align: justify;
 }
 
@@ -121,6 +128,7 @@ body {
   top: 50%;
   right: 10%;
 }
+
 #moreInfo_part1 img {
   width: 470px;
   height: 250px;
@@ -130,27 +138,32 @@ body {
   top: 10%;
   cursor: pointer;
 }
+
 #moreInfo_part2 {
   top: 100%;
 }
+
 #moreInfo_part2 h3 {
   float: left;
   position: relative;
   top: 25%;
   left: 12%;
 }
+
 #moreInfo_part2 h1 {
   float: left;
   position: absolute;
   top: 33%;
   left: 12%;
 }
+
 #moreInfo_part2 p {
   float: left;
   position: absolute;
   top: 50%;
   left: 12%;
 }
+
 #moreInfo_part2 img {
   width: 470px;
   height: 250px;
@@ -158,11 +171,13 @@ body {
   position: relative;
   right: 4em;
   top: 11%;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 1365px) {
-  #moreInfo_part1 img, #moreInfo_part2 img{
+
+  #moreInfo_part1 img,
+  #moreInfo_part2 img {
     width: 450px;
     height: 230px;
     top: 8%;
